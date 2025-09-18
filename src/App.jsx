@@ -30,10 +30,13 @@ function App() {
     setCount(count+1)
 
   }
+   const fatchUrl='https://fake-json-api.mock.beeceptor.com/users'
+   
+
   return (
     <>
       <h1>Hello {person.name} {person.age}</h1>
-      <h1>{count}</h1>
+      <h1 className="text-red-500" >{count}</h1>
       <button onClick={handleLogin}>Login</button><br></br>
       <button onClick={handleCounter}>Increase</button>
       <Users 
